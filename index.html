@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="sudoku_solver.js"></script>
+    <script defer src="sudoku_ui.js"></script>
+    <script defer src="main.js"></script>
+
+</head>
+<body>
+    <div id="login-container" class="container">
+        <h1>Login</h1>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+
+    <div id="leaderboard-container" class="container">
+        <h1>Leaderboard</h1>
+        <ul id="leaderboard-list"></ul>
+    </div>
+
+    <div id="sudoku-container" class="container">
+        <h1>Sudoku Game</h1>
+        <div id="sudoku-board"></div>
+    </div>
+
+    <script src="sudoku_solver.js"></script>
+    <script src="sudoku_ui.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
